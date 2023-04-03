@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+.main
+{
+  height: 100%;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.comment
+{
+  background-color: grey;
+  padding-top: 2rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:30px;
+  height: 100%;
+  width: 100%;
+}
+.each-item
+{
+  min-width: 400px;;
+  background-color:green;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  margin:5px;
+}
+.section-1 .info
+{
+  background-color: yellow;
+  min-width: 200px;
+  padding:10px;
+}
+ .img
+{
+  display:inline-block;
+  background-color: aqua;
+  width:23px;
+  height:23px;
+  border-radius: 50%;
+}
+.section-2 
+{
+  background-color:rgb(245, 220, 220);
+  display:flex;
+  align-items: center;
+  gap:3px;
+  padding:10px;
+  width:100%;
+
+}
+.section-2 input
+{
+  padding:10px 20px;
+  width:100%;
+
+}
+.section-1
+{   
+  height:100%;
+  overflow: auto;
+}
+.modal
+{
+  height: 100%;
+  position: fixed;
+  inset: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   visibility: hidden;
+}
+.matter
+{
+  text-align: center;
+}
+.active
+{
+  visibility: visible;
+}
+i{
+  cursor:pointer;
+}
+ 
